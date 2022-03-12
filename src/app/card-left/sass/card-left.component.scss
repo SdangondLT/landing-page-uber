@@ -1,0 +1,28 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+.cardLeft {
+    display: flex;
+    flex-direction: row;
+    @include sizes (90%, 100%);
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: $color-contrast-primary;
+    padding: 10px;
+
+    .cardLeft__img {
+        @include sizes (40%, 40%);
+        @include toCenter;
+        margin: auto 10px;
+        padding-left: 15px;
+    }
+
+    .cardLeft__p {
+        font-family:$font-family-brand2;
+        color: $color-light;
+        font-size: 6vw;
+        @include toCenter;
+        padding: 30px 10px;
+    }
+}
+

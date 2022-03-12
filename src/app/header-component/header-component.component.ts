@@ -6,8 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sass/header-component.component.scss']
 })
 export class HeaderComponentComponent implements OnInit {
-  nameCompany = 'Uber2';
+  nameCompany = 'Uber';
   year = '2021';
+  imgYear = '../../assets/img/year.PNG';
 
   constructor() { }
 

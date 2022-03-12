@@ -1,0 +1,9 @@
+@mixin toCenter {
+    text-align: center;
+    margin: 0 auto;
+}
+
+@mixin sizes ($width, $height) {
+    width: $width;
+    height: $height;
+}

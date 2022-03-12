@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,40 @@
     <title>landing Page</title>
     <!-- <link href="./styles/style.css" rel="stylesheet" type="text/css"> -->
 </head>
+
 <body class="body">
     <header-component></header-component>
-    <card-left></card-left>
-    <card-right></card-right>
-    <section>
-        <h1 class="h1sile">Estamos ansiosos por saber qué sigue.</h1>
+
+    <card-left [imgLeft]="'../../../assets/img/takeACar.PNG'"
+        [textLeft]="'Hiciste 30 viajes con la app de Uber. Tú marcaste el camino pero te ayudamos a conseguir a alguien detrás del volante.'">
+    </card-left>
+    <card-right [imgRight]="'../../../assets/img/map.PNG'"
+        [textRight]="'Has viajado más de 178 kilómetros. Una gran forma de llegar a tus diferentes destinos.'">
+    ></card-right>
+    <card-left [imgLeft]="'../../../assets/img/clock.PNG'"
+        [textLeft]="'Pasaste 472 minutos en el camino.¿Disfrutaste del paisaje?'"
+    ></card-left>
+    <card-right [imgRight]="'../../../assets/img/car.PNG'"
+        [textRight]="'2021 fue el año del Logan De hecho, fue el vehículo que más veces usaste.'"
+    ></card-right>
+    <card-left [imgLeft]="'../../../assets/img/key.PNG'"
+        [textLeft]="'Edwar Milton fue tu socio conductor personal.¡Es broma! Edwar Milton fue el nombre más común.'"
+    ></card-left>
+    <card-right [imgRight]="'../../../assets/img/calendar.PNG'"
+        [textRight]="'Viajaste más en Domingo Quiere decir que hubo más diversión (o más trabajo).'"
+    ></card-right>
+
+    <section class="nextStep">
+        <h1 class="nextStep__title">Estamos ansiosos por saber qué sigue.</h1>
         <!-- <h1>Estamos ansiosos por saber qué sigue.</h1> -->
-        <p>Quizás visitarás nuevos lugares o probarás nuevos tipos
+        <p class="nextStep__paragraph">Quizás visitarás nuevos lugares o probarás nuevos tipos
             de comida: sea lo que sea, aquí estamos para hacerlo
             más fácil para ti.
         </p>
-        <button>Empecemos ></button>
+        <button class="nextStep__btn--start">Empecemos ></button>
     </section>
-    <section>
-        <p>Únicamente para Colombia y Honduras: Para efectos de
+    <section class="restrictions">
+        <p class="restrictions__paragraph"> Únicamente para Colombia y Honduras: Para efectos de
             claridad, en caso de que en la presente comunicación se
             muestre la palabra "viaje" y/o "conducir", éstas
             significarán "arrendamiento" y/o "realizar un
@@ -32,4 +52,5 @@
     </section>
     <footer-component></footer-component>
 </body>
+
 </html>

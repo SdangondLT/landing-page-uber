@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'card-left',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sass/card-left.component.scss']
 })
 export class CardLeftComponent implements OnInit {
+  @Input() imgLeft  = '';
+  @Input() textLeft = '';
 
   constructor() { }
 
