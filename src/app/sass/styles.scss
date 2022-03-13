@@ -4,15 +4,65 @@
 @import '../../../node_modules/normalize.css/normalize.css';
 
 html {
-    background-color: #a39696;
-}
-.body {
-    width: 90%;
-    height: 90%;
-    margin: 0 auto;
-    border: 1px solid black;
-}
+    background-color: $color-dark;
 
-// .nextStep {
+    .body {
+        width: 90%;
+        height: 90%;
+        margin: 0 auto;
+        border: 1px solid $color-dark;
+    
+        .cards {
+            @include sizes(100%, 100%);
+            background-color: $color-light;
 
-// }
+            .nextStep {
+                background-color: $color-light;
+                @include sizes (100%, 90%);
+    
+                .nextStep__title {
+                    font-family: $font-family-brand, $font-family-brand2;
+                    color: $color-dark;
+                    font-size: 7vw;
+                    padding: 30px 30px;
+                    @include toCenter;
+                    margin: 10px;
+                }
+                
+                .nextStep__paragraph {
+                    font-family:$font-family-brand2;
+                    color: $color-dark;
+                    font-size: 5vw;
+                    width: 80%; 
+                    @include toCenter;
+                    margin: 0 auto 6% auto;
+                }
+                .nextStep__btn--start {
+                    text-decoration: none;
+                    color: $color-dark;
+                    margin: 37%;
+                    font-weight: bold;
+                }
+
+                .nextStep__ilustration {
+                    display: block;
+                    @include sizes(100%, auto);   
+                }
+            }
+        }  
+        
+        .restrictions {
+            background-color: $color-contrast-primary;
+            @include sizes (100%, 100%);
+          
+            .restrictions__paragraph {
+                font-family:$font-family-brand2;
+                color: $color-light;
+                font-size: 5vw;
+                text-align: justify;
+                padding: 50px;
+                margin: 0;
+            }
+        }
+    }
+}

@@ -1,7 +1,7 @@
 @import '../../sass/variables';
 @import '../../sass/mixins';
 
-.cardLeft {
+.cards__left {
     display: flex;
     flex-direction: row;
     @include sizes (90%, 100%);
@@ -10,14 +10,14 @@
     background-color: $color-contrast-primary;
     padding: 10px;
 
-    .cardLeft__img {
+    .cards__left--img {
         @include sizes (40%, 40%);
         @include toCenter;
         margin: auto 10px;
         padding-left: 15px;
     }
 
-    .cardLeft__p {
+    .cards__left--p {
         font-family:$font-family-brand2;
         color: $color-light;
         font-size: 6vw;

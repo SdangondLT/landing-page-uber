@@ -1,0 +1,33 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+.footer {
+    background-color: $color-light;
+
+    .footer__information {
+        padding: 30px 14px 30px 14px;
+
+        .footer__information--options {
+            list-style-type: none;
+            margin: 10px;
+            font-family: $font-family-brand, $font-family-brand2;
+            font-size: 3vw;
+        }
+    }
+
+    .footer__media {
+        padding-left: 14px;
+
+        .footer__media--networks > img {
+            @include sizes (5%, 5%); 
+            text-align: left;
+            margin: 0 50px 10px 0;
+        }
+    }
+
+    .footer__address {
+        font-family: $font-family-brand, $font-family-brand2;
+        font-size: 2.5vw;
+        padding: 0 0 20px 20px;
+    }
+}
