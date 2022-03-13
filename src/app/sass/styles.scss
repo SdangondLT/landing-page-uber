@@ -3,6 +3,23 @@
 @import './mixins';
 @import '../../../node_modules/normalize.css/normalize.css';
 
+@font-face {
+    font-family: fontBold;
+    src: url(../../assets/font/UberMoveTextBold.otf);
+}
+@font-face {
+    font-family: fontMedium;
+    src: url(../../assets/font/UberMoveTextMedium.otf);
+}
+@font-face {
+    font-family: fontRegular;
+    src: url(../../assets/font/UberMoveTextRegular.otf);
+}
+@font-face {
+    font-family: fontLight;
+    src: url(../../assets/font/UberMoveTextLight.otf);
+}
+
 html {
     background-color: $color-dark;
 
@@ -21,27 +38,25 @@ html {
                 @include sizes (100%, 90%);
     
                 .nextStep__title {
-                    font-family: $font-family-brand, $font-family-brand2;
-                    color: $color-dark;
-                    font-size: 7vw;
-                    padding: 30px 30px;
+                    @include fontFamilySizes (fontMedium, 7vw);
                     @include toCenter;
+                    color: $color-dark;              
+                    padding: 30px 30px;
                     margin: 10px;
                 }
                 
                 .nextStep__paragraph {
-                    font-family:$font-family-brand2;
-                    color: $color-dark;
-                    font-size: 5vw;
-                    width: 80%; 
+                    @include fontFamilySizes (fontRegular, 4vw);
                     @include toCenter;
+                    color: $color-dark;
+                    width: 80%;
                     margin: 0 auto 6% auto;
                 }
                 .nextStep__btn--start {
+                    @include fontFamilySizes (fontBold, 4vw);
                     text-decoration: none;
                     color: $color-dark;
-                    margin: 37%;
-                    font-weight: bold;
+                    margin: 35%;
                 }
 
                 .nextStep__ilustration {
@@ -56,9 +71,8 @@ html {
             @include sizes (100%, 100%);
           
             .restrictions__paragraph {
-                font-family:$font-family-brand2;
+                @include fontFamilySizes (fontLight, 3vw);
                 color: $color-light;
-                font-size: 5vw;
                 text-align: justify;
                 padding: 50px;
                 margin: 0;

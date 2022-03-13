@@ -11,10 +11,9 @@
     padding: 10px;
 
     .cards__right--p {
-        font-family:$font-family-brand2;
-        color: $color-light;
-        font-size: 6vw;
+        @include fontFamilySizes(fontLight, 5vw);
         @include toCenter;
+        color: $color-light;
         padding: 30px 10px;
     }
 

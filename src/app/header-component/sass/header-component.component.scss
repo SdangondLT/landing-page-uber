@@ -19,18 +19,16 @@
         @include toCenter;
     }
     .firstSection__h1 {
-        font-family: $font-family-brand, $font-family-brand2;
+        @include fontFamilySizes(fontRegular, 8vw);
         color: $color-dark;
-        font-size: 8vw;
         padding: 10px;
         text-align: center;
     }
     .firstSection__p {
-        font-family:$font-family-brand2;
-        color: $color-dark;
-        font-size: 5vw;
-        width: 80%;
+        @include fontFamilySizes(fontMedium, 5vw);
         @include toCenter;
+        color: $color-dark;
+        width: 80%;
     }
 }
 .secondSection {
@@ -43,20 +41,17 @@
         margin: 0 auto;
     }
     .secondSection__h2 {
-        font-family: $font-family-brand, $font-family-brand2;
+        @include fontFamilySizes(fontBold, 7vw);
         color: $color-dark;
-        font-size: 7vw;
         padding: 30px 30px;
         margin: 10px;
         text-align: center;
     }
     .secondSection__p {
-        font-family:$font-family-brand2;
-        color: $color-dark;
-        font-size: 5vw;
-        margin: 0;
-        width: 80%; 
+        @include fontFamilySizes(fontRegular, 5vw);
         @include toCenter;
+        color: $color-dark;
+        width: 80%; 
     }
     hr {
         @include sizes(50%, 5px);

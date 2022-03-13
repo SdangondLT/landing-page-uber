@@ -8,10 +8,9 @@
         padding: 30px 14px 30px 14px;
 
         .footer__information--options {
+            @include fontFamilySizes (fontMedium, 3vw);
             list-style-type: none;
             margin: 10px;
-            font-family: $font-family-brand, $font-family-brand2;
-            font-size: 3vw;
         }
     }
 
@@ -26,8 +25,7 @@
     }
 
     .footer__address {
-        font-family: $font-family-brand, $font-family-brand2;
-        font-size: 2.5vw;
+        @include fontFamilySizes (fontMedium, 2.5vw);
         padding: 0 0 20px 20px;
     }
 }
