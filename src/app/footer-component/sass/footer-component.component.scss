@@ -27,5 +27,43 @@
     .footer__address {
         @include fontFamilySizes (fontMedium, 2.5vw);
         padding: 0 0 20px 20px;
+        .footer__address--ancla {
+            text-decoration: none;
+            color: $color-dark;
+        }
     }
+}
+
+@media (min-width: 992px) {
+    .footer {
+        background-color: $color-dark;
+    
+        .footer__information {
+            display: grid;
+            grid-template-columns: auto auto;    
+            .footer__information--options {
+                @include fontFamilySizes (fontRegular, 1.8vw);
+                color: $color-light;
+            }
+        }
+    
+        .footer__media {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;   
+    
+            .footer__media--networks > img {
+                @include sizes (35px, 35px); 
+            }
+        }
+    
+        .footer__address {
+            @include fontFamilySizes (fontLight, 1.8vw);
+            color: $color-light;
+            .footer__address--ancla {
+                text-decoration: none;
+                color: $color-light;
+            }
+        }
+    }
+    
 }

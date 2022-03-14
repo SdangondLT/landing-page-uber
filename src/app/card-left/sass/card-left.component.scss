@@ -25,3 +25,19 @@
     }
 }
 
+@media (min-width: 992px) {
+    .cards__left {
+        flex-direction: column;
+        @include sizes (50%, 237px);
+        background-color: $color-contrast-primary-desktop;
+        .cards__left--img {
+            @include sizes (40%, 40%);
+            margin: 0 auto;
+        }
+        .cards__left--p {
+            @include fontFamilySizes(fontMedium, 1.8vw);
+            color: $color-dark;     
+        }
+    }
+}
+

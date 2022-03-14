@@ -9,6 +9,8 @@ export class HeaderComponentComponent implements OnInit {
   nameCompany = 'Uber';
   year = '2021';
   imgYear = '../../assets/img/year.PNG';
+  imgYearHorizontal = '../../assets/img/year2021.png';
+  imgArrow = '../../assets/img/arrow.png';
 
   constructor() { }
 

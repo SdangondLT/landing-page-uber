@@ -28,43 +28,40 @@ html {
         height: 90%;
         margin: 0 auto;
         border: 1px solid $color-dark;
-    
+        background-color: $color-light;
         .cards {
             @include sizes(100%, 100%);
-            background-color: $color-light;
-
-            .nextStep {
-                background-color: $color-light;
-                @include sizes (100%, 90%);
-    
-                .nextStep__title {
-                    @include fontFamilySizes (fontMedium, 7vw);
-                    @include toCenter;
-                    color: $color-dark;              
-                    padding: 30px 30px;
-                    margin: 10px;
-                }
-                
-                .nextStep__paragraph {
-                    @include fontFamilySizes (fontRegular, 4vw);
-                    @include toCenter;
-                    color: $color-dark;
-                    width: 80%;
-                    margin: 0 auto 6% auto;
-                }
-                .nextStep__btn--start {
-                    @include fontFamilySizes (fontBold, 4vw);
-                    text-decoration: none;
-                    color: $color-dark;
-                    margin: 35%;
-                }
-
-                .nextStep__ilustration {
-                    display: block;
-                    @include sizes(100%, auto);   
-                }
-            }
         }  
+        .nextStep {
+            background-color: $color-light;
+            @include sizes (100%, 90%);
+
+            .nextStep__title {
+                @include fontFamilySizes (fontMedium, 7vw);
+                @include toCenter;
+                color: $color-dark;              
+                padding: 30px 30px;
+                margin: 10px;
+            }
+            
+            .nextStep__paragraph {
+                @include fontFamilySizes (fontRegular, 4vw);
+                @include toCenter;
+                color: $color-dark;
+                width: 80%;
+                margin: 0 auto 6% auto;
+            }
+            .nextStep__btn--start {
+                @include fontFamilySizes (fontBold, 4vw);
+                text-decoration: none;
+                color: $color-dark;
+                margin: 35%;
+            }
+            .nextStep__ilustration {
+                display: block;
+                @include sizes(100%, auto);   
+            }
+        }
         
         .restrictions {
             background-color: $color-contrast-primary;
@@ -76,6 +73,47 @@ html {
                 text-align: justify;
                 padding: 50px;
                 margin: 0;
+            }
+        }
+    }
+
+    @media (min-width: 992px){
+        background-color: $color-dark;
+
+        .body {        
+            background-color: $color-dark;
+            .cards {
+                display: grid;
+                grid-template-columns: 50% 50%;
+                background-color: $color-dark;
+            }
+              
+            .nextStep {
+                background-color: $color-dark;
+                //  @include sizes (100%, 90%);
+    
+                .nextStep__title {
+                    @include fontFamilySizes(fontMedium, 3.5vw);
+                    color: $color-light;      
+                }
+                .nextStep__paragraph {
+                    @include fontFamilySizes (fontRegular, 2vw);
+                    color: $color-light;
+                }
+                .nextStep__btn--start {
+                    @include fontFamilySizes (fontBold, 2vw);
+                    color: $color-light;
+                    margin: 42%;
+                }
+            }            
+            .restrictions {
+                background-color: $color-light;
+                .restrictions__paragraph {
+                    @include fontFamilySizes (fontMedium, 2vw);
+                    color: $color-dark;
+                    text-align: left;
+                    padding: 80px;
+                }
             }
         }
     }
